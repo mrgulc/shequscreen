@@ -1,0 +1,37 @@
+/*[font-primary] {
+    color: #123456;
+}
+----------------------------------------------------------------*/
+@each $style
+  in (
+    primary $text-color-primary,
+    secondary $text-color-secondary,
+    tertiary $text-color-tertiary,
+  )
+{
+  [font-#{nth($style, 1)}] {
+    color: #{nth($style, 2)};
+  }
+}
+
+/*[bg-primary]{
+    background-color: #123456;
+}
+*/
+@each $style
+  in (
+    primary $background-color-primary,
+    // secondary $background-color-secondary,
+    // tertiary $background-color-tertiary
+  )
+{
+  [bg-#{nth($style, 1)}] {
+    background-color: #{nth($style, 2)};
+  }
+}
+
+@for $i from 1 through 10 {
+  [bga#{$i}] {
+    background-color: rgba(0, 0, 0, $i/10);
+  }
+}

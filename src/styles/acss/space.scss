@@ -1,0 +1,53 @@
+$direction: (t top, r right, b bottom, l left);
+
+@for $i from 1 through 50 {
+  @each $type in (m, p, v, h, a) {
+    @if $type == m {
+      @each $d in $direction {
+        [m#{nth($d,1)}#{$i}] {
+          margin-#{nth($d,2)}: #{$i}px;
+        }
+      }
+    }
+
+    @if $type == p {
+      @each $d in $direction {
+        [p#{nth($d, 1)}#{$i}] {
+          padding-#{nth($d,2)}: #{$i}px;
+        }
+      }
+    }
+    @if $type == v {
+      [pv#{$i}] {
+        padding-top: #{$i}px;
+        padding-bottom: #{$i}px;
+      }
+      [mv#{$i}] {
+        margin-top: #{$i}px;
+        margin-bottom: #{$i}px;
+      }
+    }
+    @if $type == h {
+      [ph#{$i}] {
+        padding-left: #{$i}px;
+        padding-right: #{$i}px;
+      }
+      [mh#{$i}] {
+        margin-left: #{$i}px;
+        margin-right: #{$i}px;
+      }
+    }
+    @if $type == a {
+      [m#{$i}] {
+        margin: #{$i}px;
+      }
+      [p#{$i}] {
+        padding: #{$i}px;
+      }
+    }
+  }
+}
+
+[ml-a] {
+  margin-left: auto;
+}

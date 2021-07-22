@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'HanWangZonYi';
+  src: url('~@/styles/acss/font/HanWangZonYi.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PingFangSC';
+  src: url('~@/styles/acss/font/PingFang Regular.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[font-hw] {
+  font-family: 'HanWangZonYi';
+}
+
+[font-pf] {
+  font-family: 'PingFangSC';
+}

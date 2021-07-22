@@ -1,0 +1,9 @@
+/* [ellipsis]{
+    
+}
+*/
+@for $i from 1 through 3 {
+  [ellipsis#{$i}] {
+    @include ellipsis($i);
+  }
+}

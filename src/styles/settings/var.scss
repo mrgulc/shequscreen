@@ -1,0 +1,26 @@
+/*Color
+----------------------------------------------------------------*/
+$color-primary: #ccfff7;
+$color-secondary: #acfbe4;
+$color-tertiary: #00a8a733;
+
+$text-color-primary: $color-primary;
+$text-color-secondary: $color-secondary;
+$text-color-tertiary: #fff;
+
+$background-color-primary: $color-tertiary;
+$background-color-secondary: #00826e;
+
+/*Border
+----------------------------------------------------------------*/
+$border-base-width: 1px;
+$border-base-style: solid;
+
+$border-base: $border-base-width $border-base-style #000;
+
+/*Index 
+----------------------------------------------------------------*/
+$index-normal: 1;
+$index-position: 10;
+$index-top: 1000;
+$index-popper: 2000;

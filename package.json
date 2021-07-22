@@ -1,42 +1,49 @@
 {
   "name": "use-comp2lib",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "build": "webpack --config ./config/webpack.common.js --env production --progress",
+    "serve": "webpack server --config ./config/webpack.common.js --env development --progress"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "core-js": "^3.15.2",
+    "css-loader": "^5.2.6",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "eslint": "^7.30.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-webpack": "^0.13.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-vue": "^7.13.0",
+    "mini-css-extract-plugin": "^2.1.0",
+    "node-sass": "^6.0.0",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-px-to-viewport": "^1.1.1",
+    "regenerator-runtime": "^0.13.7",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.0.0",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.43.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+  "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@icon-park/vue": "^1.3.3",
+    "element-ui": "^2.15.3",
+    "html-webpack-plugin": "^5.3.2",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "normalize.css": "^8.0.1",
+    "svg-sprite-loader": "^6.0.9",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.7",
+    "vue-router": "^3.5.2",
+    "webpack-merge": "^5.8.0"
+  }
 }

@@ -1,0 +1,15 @@
+$direction: (w width, h height);
+
+@for $i from 1 through 100 {
+  @each $d in $direction {
+    [#{nth($d,1)}#{$i}] {
+      #{nth($d,2)}: #{$i}px;
+    }
+  }
+}
+
+@each $d in $direction {
+  [#{nth($d, 1)}-full] {
+    #{nth($d,2)}: 100%;
+  }
+}

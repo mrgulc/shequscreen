@@ -1,0 +1,18 @@
+/* [radius1]{
+    border-radius:1px;    
+}
+*/
+
+@for $i from 1 through 10 {
+  [radius#{$i}] {
+    border-radius: #{$i}px;
+  }
+}
+
+[circle] {
+  border-radius: 9999rem;
+}
+
+[border-base] {
+  border: $border-base;
+}
