@@ -13,3 +13,7 @@ $direction: (w width, h height);
     #{nth($d,2)}: 100%;
   }
 }
+
+[w-50]{
+  width: 50%;
+}

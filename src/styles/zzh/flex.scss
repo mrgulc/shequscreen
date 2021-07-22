@@ -1,0 +1,29 @@
+[flex] {
+  display: flex;
+  flex-direction: column;
+}
+[flex-c] {
+  display: inline-flex;
+  flex-direction: column;
+}
+[flex-r] {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+[text-overflow] {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+[text-overflow2] {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
