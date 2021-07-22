@@ -3,7 +3,7 @@
  * @Author: MRG
  * @Date: 2021-07-07 16:42:11
  * @LastEditors: MRG
- * @LastEditTime: 2021-07-22 10:37:39
+ * @LastEditTime: 2021-07-22 10:53:58
  */
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -120,7 +120,7 @@ module.exports = env => {
         // library: { type: 'var', name: 'com2lib' },
         filename: 'remoteEntry.js',
         remotes: {
-          center: 'center@http://localhost:6060/remoteEntry.js'
+          center: 'center@http://192.168.2.222:6060/remoteEntry.js'
         },
         shared: {
           vue: {
